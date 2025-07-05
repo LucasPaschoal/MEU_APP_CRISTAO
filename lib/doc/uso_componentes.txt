@@ -1,0 +1,131 @@
+COMPONENTES FLUTTER UTILIZADOS NO PROJETO
+
+📚 COMPONENTES VISTOS EM AULA
+1. ESTRUTURA BÁSICA
+
+MaterialApp - App principal com tema personalizado
+Scaffold - Estrutura básica das telas
+AppBar - Barra superior com título e ações
+FloatingActionButton - Botão flutuante para adicionar itens
+
+2. NAVEGAÇÃO
+BottomNavigationBar - Navegação inferior entre 3 telas
+BottomNavigationBarItem - Itens da navegação inferior
+
+3. LAYOUT E CONTAINERS
+Column - Organização vertical de widgets
+Row - Organização horizontal de widgets
+Container - Containers com decoração e padding
+Card - Cards para exibir itens das listas
+ListView.builder - Listas dinâmicas otimizadas
+Padding - Espaçamento interno
+SizedBox - Espaçamento fixo entre widgets
+Center - Centralização de widgets
+Expanded - Expansão de widgets em flex containers
+
+4. INTERAÇÃO
+ElevatedButton - Botões principais
+TextButton - Botões de texto
+IconButton - Botões com ícones
+Checkbox - Caixas de seleção
+GestureDetector - Detecção de gestos de toque
+TextField - Campos de entrada de texto
+
+5. EXIBIÇÃO DE TEXTO
+Text - Exibição de texto com estilos
+TextStyle - Estilização de texto
+
+6. ÍCONES E CORES
+Icon - Exibição de ícones
+Icons - Biblioteca de ícones do Material Design
+Colors - Paleta de cores do Material Design
+
+7. DIÁLOGOS
+AlertDialog - Diálogos de confirmação e entrada
+showDialog - Exibição de diálogos
+
+8. DECORAÇÃO
+BoxDecoration - Decoração de containers
+BorderRadius - Bordas arredondadas
+Border - Bordas personalizadas
+
+📚 COMPONENTES NOVOS (NÃO VISTOS EM AULA)
+1. NAVEGAÇÃO AVANÇADA
+TabController - Controlador para TabBar/TabView
+TabBar - Barra de abas horizontais
+TabBarView - Visualizador de conteúdo das abas
+Tab - Item individual da TabBar
+TickerProviderStateMixin - Mixin para animações
+
+Por que usei: Necessário para criar as abas "Antigo Testamento" e "Novo Testamento" na tela de leitura bíblica, organizando melhor o conteúdo.
+
+2. LISTAS AVANÇADAS
+ExpansionTile - Item expansível em listas
+
+Por que usei: ExpansionTile permite mostrar/ocultar os capítulos de cada livro bíblico. ListTile padroniza a exibição dos itens nas listas.
+
+3. LAYOUT FLEXÍVEL
+Wrap - Layout que quebra linha automaticamente
+LinearProgressIndicator - Barra de progresso linear
+CircleAvatar - Avatar circular
+SingleChildScrollView - Scroll em conteúdo único
+
+Por que usei:
+
+Wrap para organizar os números dos capítulos bíblicos
+LinearProgressIndicator para mostrar progresso de leitura
+CircleAvatar para indicadores visuais nos livros
+SingleChildScrollView para diálogos com muito conteúdo
+
+4. MENUS E NAVEGAÇÃO
+PopupMenuButton - Menu suspenso
+PopupMenuItem - Item do menu suspenso
+
+Por que usei: Para criar menus de ações como "Excluir Todos", "Marcar livro completo", organizando melhor as opções.
+
+5. INDICADORES DE ESTADO
+CircularProgressIndicator - Indicador de carregamento circular
+SnackBar - Mensagens temporárias na parte inferior
+
+Por que usei:
+
+CircularProgressIndicator para mostrar carregamento dos dados do Firebase
+SnackBar para feedback das ações do usuário
+
+6. CAMPOS DE ENTRADA AVANÇADOS
+TextEditingController - Controlador de campos de texto
+InputDecoration - Decoração de campos de entrada
+OutlineInputBorder - Borda de campo de texto
+Por que usei: Para controlar e estilizar os campos de entrada nos formulários de pedidos e devocionais.
+
+7. DECORAÇÃO AVANÇADA
+RoundedRectangleBorder - Bordas arredondadas personalizadas
+BoxShadow - Sombras em containers
+LinearGradient - Gradientes lineares
+WidgetStateProperty - Propriedades baseadas no estado do widget
+
+Por que usei: Para criar uma interface mais moderna e atrativa com sombras, gradientes e bordas personalizadas.
+
+8. TEMAS E ESTILIZAÇÃO
+ThemeData - Dados de tema do app
+AppBarTheme - Tema da AppBar
+CardTheme - Tema dos Cards
+CheckboxTheme - Tema dos Checkboxes
+ElevatedButtonTheme - Tema dos botões
+FloatingActionButtonTheme - Tema do FAB
+SnackBarTheme - Tema das SnackBars
+
+Por que usei: Para manter consistência visual em todo o app com um tema personalizado baseado na cor índigo.
+
+9. FORMATAÇÃO
+DateFormat (do pacote intl) - Formatação de datas
+Timestamp (do Firebase) - Timestamps do Firestore
+
+Por que usei: Para exibir as datas de criação dos pedidos e devocionais em formato brasileiro (dd/MM/yyyy).
+
+10. ESTADO E LIFECYCLE
+mounted - Verificação se widget ainda está na árvore
+dispose() - Limpeza de recursos
+setState() - Atualização de estado (visto em aula, mas uso avançado)
+
+Por que usei: Para evitar erros ao atualizar widgets que já foram removidos da árvore e para limpar controladores adequadamente.
