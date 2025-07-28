@@ -1,0 +1,12 @@
+========== EQUIPE ==========
+Lucas Paschoal
+Samuel Pena
+
+========== PROFESSOR ==========
+Leandro da Silva Foly
+
+========== DISCIPLINA ==========
+Tópicos Avançados
+
+========== TURMA ==========
+Sistemas de Informação - 7º Período

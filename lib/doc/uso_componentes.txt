@@ -1,0 +1,89 @@
+COMPONENTES FLUTTER UTILIZADOS NO PROJETO
+
+📚 COMPONENTES VISTOS EM AULA
+
+ESTRUTURA BASE
+✓ MaterialApp, Scaffold, AppBar, FloatingActionButton
+
+NAVEGAÇÃO
+✓ BottomNavigationBar, BottomNavigationBarItem
+✓ MaterialPageRoute
+
+LAYOUT E POSICIONAMENTO
+✓ Column, Row, Container, Padding, SizedBox, Center, Expanded
+✓ CrossAxisAlignment, MainAxisAlignment
+
+LISTAS E DADOS
+✓ ListView.builder, List, Card
+✓ QuerySnapshot, Future
+
+INTERAÇÃO E BOTÕES
+✓ ElevatedButton, TextButton, IconButton, Checkbox
+✓ AlertDialog, showDialog, SwitchListTile
+
+ENTRADA DE DADOS
+✓ TextField, TextFormField, InputDecoration
+✓ TextEditingController, TextInputType, Form
+
+VISUAL E ESTILO
+✓ Text, TextStyle, Icon, Icons, Colors
+✓ BoxDecoration, BorderRadius, Border, ThemeData
+
+FEEDBACK PARA USUÁRIO
+✓ SnackBar, ScaffoldMessenger
+
+📚 COMPONENTES NOVOS (NÃO VISTOS EM AULA)
+
+1. NAVEGAÇÃO COM ABAS
+• TabBar + TabBarView + Tab + TickerProviderStateMixin
+Uso: Abas "Antigo Testamento" e "Novo Testamento" na tela de leitura
+
+2. LISTAS EXPANSÍVEIS  
+• ExpansionTile
+Uso: Mostrar/ocultar capítulos de cada livro bíblico
+
+3. LAYOUT AVANÇADO
+• Wrap - Organizar números dos capítulos bíblicos em grid
+• LinearProgressIndicator - Mostrar progresso de leitura  
+• CircleAvatar - Indicadores visuais nos livros
+• SingleChildScrollView - Scroll em diálogos extensos
+
+4. MENUS CONTEXTUAIS
+• PopupMenuButton + PopupMenuItem  
+Uso: Menu "Excluir Todos" e "Marcar livro completo"
+
+5. INDICADORES DE ESTADO
+• CircularProgressIndicator - Loading dos dados do Firebase
+
+6. GESTOS E INTERAÇÕES
+• GestureDetector - Detectar toques longos para exclusão
+Uso: onLongPress para marcar versículo como lido e onTap para visualizar
+
+7. ESTILIZAÇÃO AVANÇADA
+• RoundedRectangleBorder - Bordas personalizadas
+• BoxShadow - Sombras em containers  
+• LinearGradient - Gradientes de cor
+• WidgetStateProperty - Propriedades baseadas no estado
+• CheckboxThemeData - Configuração de tema para checkboxes
+• ElevatedButtonThemeData - Configuração de tema para botões elevados
+• OutlineInputBorder - Bordas com contorno para campos de entrada
+
+8. FORMATAÇÃO E DADOS
+• DateFormat (pacote intl) - Datas em formato brasileiro
+• Timestamp (Firebase) - Timestamps do Firestore
+
+9. GERENCIAMENTO DE ESTADO
+• mounted - Verificar se widget ainda existe antes de setState
+• dispose() - Limpeza de controladores e recursos
+
+10. ANIMAÇÕES E TIMING
+• Duration - Definir duração de animações e timeouts
+
+11. NAVEGAÇÃO AVANÇADA
+• barrierDismissible - Controlar se dialogs podem ser fechados tocando fora
+Uso: Loading dialog que não pode ser fechado pelo usuário
+
+12. LAYOUT RESPONSIVO
+• double.maxFinite - Largura máxima para componentes
+• SizedBox com height fixa - Controlar altura de containers scrolláveis
+Uso: Dialog de versículos com altura controlada
